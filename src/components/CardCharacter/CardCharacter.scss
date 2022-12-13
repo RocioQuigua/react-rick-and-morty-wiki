@@ -1,0 +1,21 @@
+.card-characters {
+  background-color: #000080;
+  border: 4px solid #02b1c8;
+  border-radius: 18px;
+  &__name {
+    display: flex;
+    justify-content: center;
+    color: #02b1c8;
+    font-weight: bold;
+  }
+  img {
+    height: 40%;
+    margin-left: 68px;
+    border-radius: 16px;
+  }
+  &__description {
+    margin-left: 24px;
+    color: #02b1c8;
+  }
+}
+//#000080
