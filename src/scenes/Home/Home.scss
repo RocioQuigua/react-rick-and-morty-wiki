@@ -1,0 +1,22 @@
+.home {
+  height: 100px;
+  margin: 0px;
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 230px;
+  }
+  &__title {
+    height: 160px;
+  }
+  &__input {
+    border: 4px solid #02b1c8;
+    border-radius: 8px;
+    width: 30%;
+    height: 30px;
+    outline: none;
+    color: #000080;
+  }
+}
