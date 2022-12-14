@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import api from "../../common/api/api";
 import { CardCharacter } from "../CardCharacter/CardCharacter";
 
-export const ListCharacters = () => {
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    handleData();
-  }, []);
-
-  const handleData = async () => {
-    const data = await api.get("/character");
-    setCharacters(data.res.results);
-    console.log(data);
-  };
+export const ListCharacters = ({characters}) => {
 
   return (
     <div className="list-characters">
