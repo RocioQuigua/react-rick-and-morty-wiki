@@ -19,4 +19,21 @@
     outline: none;
     color: #000080;
   }
+  &__favorites {
+    display: flex;
+    justify-content: flex-start;
+  }
+  h1 {
+    height: 26px;
+    margin: 0;
+  }
+  &__agg {
+    height: 26px;
+    margin: 8px;
+    border-radius: 20px;
+  }
+  &__filters {
+    display: grid;
+    grid-template-columns: repeat();
+  }
 }
