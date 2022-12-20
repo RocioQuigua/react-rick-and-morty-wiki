@@ -1,6 +1,7 @@
 .home {
   height: 100px;
   margin: 0px;
+  background-color: #181645;
   &__center {
     display: flex;
     flex-direction: column;
@@ -10,14 +11,6 @@
   }
   &__title {
     height: 160px;
-  }
-  &__input {
-    border: 4px solid #02b1c8;
-    border-radius: 8px;
-    width: 30%;
-    height: 30px;
-    outline: none;
-    color: #000080;
   }
   &__favorites {
     display: flex;
@@ -31,9 +24,5 @@
     height: 26px;
     margin: 8px;
     border-radius: 20px;
-  }
-  &__filters {
-    display: grid;
-    grid-template-columns: repeat();
   }
 }
