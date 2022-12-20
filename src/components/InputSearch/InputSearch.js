@@ -1,7 +1,15 @@
 import React from "react";
 
+import { Input } from "antd";
+
 export const InputSearch = () => {
-  return (
-    <input className="home home__input" placeholder="Search for characters" />
-  );
+  const {Search} = Input;
+  const onSearch = (value) => console.log(value);
+  
+  return <Search
+    className="input-search" 
+    placeholder="Search for characters" 
+    allowClear
+    onSearch={onSearch}
+  />;
 };
