@@ -1,0 +1,16 @@
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 140px);
+  height: 50px;
+  justify-content: center;
+  gap: 6px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: #02b1c8;
+    padding-top: 4px;
+  }
+  &__selectors {
+    margin-top: 6px;
+  }
+}
