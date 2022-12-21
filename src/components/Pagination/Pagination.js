@@ -1,15 +1,24 @@
-import React from 'react';
+import React from "react";
 
-export const  Pagination = ({pages, page, setPage, onClick}) => {
-  const items = new Array(pages);
+import { Button } from "antd";
 
+export const Pagination = ({ page, setPage }) => {
   return (
-    <div className='pagination'>
-      {[...items].map((_, index) => (
-        <button className='pagination__buttons' key={index} type="button" onClick={() => onClick(index + 1)}>
-          {index+1}
-        </button>
-      ))}
+    <div className="pagination">
+        <Button
+          className="pagination__buttons"
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+        >
+          {"< Previous"}
+          </Button>
+          <span>{page}</span>
+          <Button
+          className="pagination__buttons"
+          onClick={()=> setPage(page + 1)}
+          >
+          {"Next >"}
+          </Button>
     </div>
   );
 };

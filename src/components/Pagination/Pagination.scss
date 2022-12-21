@@ -4,12 +4,13 @@
   align-items: center;
   height: 80px;
   gap: 6px;
+  background-color: #181645;
   &__buttons {
     border-radius: 18px;
-    border: 2px solid #17A6DB;
-    background-color: #000080;
+    border: 2px solid #034078;
+    background-color: #181645;
     color: #17A6DB;
-    width: 4%;
+    width: 12%;
     height: 30px;
   }
 }
